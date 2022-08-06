@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            background-color: yellow; /*1점*/
+        }
+
+        .note{
+            background-color: red; /*10점*/
+            text-align: right;
+        }
+
+        .note.error{
+            background-color: blue; /*20점*/
+        }
+
+        #head1{
+            background-color: bisque; /*100점*/
+        }
+
+        .error{
+            text-align: center; /*10점, 점수가 같을때는 밑에 있는 명령어가 적용*/ 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>specificity 명시도</h1> <!-- 명시도 점수가 높을수록 명령어 우선적용-->
+    <p>id선택자 : 100점</p>
+    <p>class 선택자 : 10점</p>
+    <p>element 선택자 : 1점</p>
+    <p>점수가 같으면 아래쪽에 있는 속성 적용됨</p>
+
+    <hr>
+
+    <!-- h1.note.error*5>lorem2  -->
+    <h1 id="head1" class="note error">Lorem, ipsum.</h1>
+    <h1 class="note error">Asperiores, ut.</h1>
+    <h1 class="note error">Magnam, mollitia!</h1>
+    <h1 class="note error">Quos, ab?</h1>
+    <h1 class="note error">Praesentium, consequuntur.</h1>
+</body>
+</html>

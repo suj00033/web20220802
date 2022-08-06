@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle01.css">
+
+    <style>
+        #table01.my-table td { /*#table01 점수가 더높기때문에 순서 신경안써도 된다.*/
+            color: blue;
+            border: 5px solid; /* link:css랑 순서에 따라서 출력되는데 대부분 link:css를 먼저 */
+        }
+    </style>
+</head>
+<body>
+    <table id="table01" class="my-table">
+        <tr>
+            <td style="border: 10px solid red;"> <!-- td는 inline 스타일이라서 가장 우선순위, table01은 outline 후순위 -->
+                Lorem.
+            </td>
+            <td>
+                Maiores.
+            </td>
+            <td>
+                Ducimus!
+            </td>
+            <td>
+                Doloribus?
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lorem.
+            </td>
+            <td>
+                Numquam.
+            </td>
+            <td>
+                Provident.
+            </td>
+            <td>
+                Velit.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lorem.
+            </td>
+            <td>
+                Nobis.
+            </td>
+            <td>
+                Placeat?
+            </td>
+            <td>
+                Laborum.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
