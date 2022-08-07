@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            display: inline; /* 옆으로 배치 */
+        }
+
+        a {
+            display: block;
+            width: 500px;
+            height: 50px;
+        }
+
+        h1:nth-child(odd),
+        a:nth-child(odd) {
+            background-color: gold;
+        }
+
+        h1:nth-child(even),
+        a:nth-child(even) {
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Lorem, ipsum.
+    </h1>
+    <h1>
+        Sequi, consectetur.
+    </h1>
+    <h1>
+        Tempora, commodi.
+    </h1>
+
+    <hr>
+
+    <a href="">
+        Lorem.
+    </a>
+    <a href="">
+        Vitae.
+    </a>
+    <a href="">
+        Possimus.
+    </a>
+</body>
+</html>
